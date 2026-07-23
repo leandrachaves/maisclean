@@ -236,7 +236,7 @@ footer .cols p{ margin-bottom:4px;}
   box-shadow:0 10px 24px -6px rgba(30,63,52,0.5);
   animation:pulse 2.6s infinite;
 }
-.float-wa svg{ width:27px; height:27px; color:var(--paper);}
+.float-wa svg{ width:2.7rem; height:2.7rem; color:var(--paper);}
 @keyframes pulse{
   0%{ box-shadow:0 10px 24px -6px rgba(30,63,52,0.5), 0 0 0 0 rgba(46,99,83,0.55);}
   70%{ box-shadow:0 10px 24px -6px rgba(30,63,52,0.5), 0 0 0 14px rgba(46,99,83,0);}
