@@ -227,6 +227,16 @@ footer{ padding:48px 0 100px; border-top:1px solid var(--line); margin-top:40px;
 .foot-grid .logo{ margin-bottom:10px;}
 footer .cols{ color:var(--ink-soft); font-size:13.5px; }
 footer .cols p{ margin-bottom:4px;}
+.copyright{
+  margin-top:3rem;
+  font-size:1.3rem;
+  color:var(--ink-soft);
+  text-align:left;
+}
+footer a:hover{
+  color:var(--brand);
+}
+
 
 /* ---------- FLOATING WHATSAPP ---------- */
 .float-wa{
@@ -247,4 +257,37 @@ footer .cols p{ margin-bottom:4px;}
   html{scroll-behavior:auto;}
   .float-wa{animation:none;}
   *{transition:none !important;}
+}
+/* ---------- LIGHTBOX ---------- */
+.lightbox{
+  display:none;
+  position:fixed;
+  inset:0;
+  background:rgba(0,0,0,.85);
+  z-index:9999;
+  justify-content:center;
+  align-items:center;
+}
+
+.lightbox img{
+  max-width:90%;
+  max-height:90vh;
+  border-radius:1rem;
+}
+
+.lightbox.active{
+  display:flex;
+}
+
+.lightbox-close{
+  position:absolute;
+  top:2rem;
+  right:3rem;
+  color:white;
+  font-size:4rem;
+  cursor:pointer;
+}
+
+.zoom-img{
+  cursor:pointer;
 }

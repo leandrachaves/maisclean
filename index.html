@@ -59,6 +59,10 @@
     </a>
   </nav>
 </header>
+<div class="lightbox" id="lightbox">
+  <span class="lightbox-close">&times;</span>
+  <img id="lightbox-img" src="" alt="">
+</div>
 
 <main id="top">
   <!-- ============ HERO ============ -->
@@ -86,7 +90,8 @@
 
       <div>
         <div class="photo-card">
-          <img src="images/sofa-antes-depois.jpg" alt="Sofá antes e depois da higienização">
+          <img src="images/sofa-antes-depois.jpg" alt="Sofá antes e depois da higienização"
+          class="zoom-img">
           <div class="photo-caption">
             <span>resultado real</span>
             <strong>Sofá · braço em veludo</strong>
@@ -206,32 +211,59 @@
   </section>
 
   <!-- ============ GALLERY (fotos reais) ============ -->
-  <section id="galeria">
-    <div class="wrap">
-      <div class="section-head">
-        <span class="eyebrow">Resultados reais de higienização</span>
-        <h2>Antes e depois de trabalhos reais</h2>
-      </div>
-      <div class="gallery">
-        <div class="g-item">
-          <img src="images/cadeira-antes-depois.jpg" alt="Limpeza profissional de cadeira estofada em Belo Horizonte">
-          <p class="g-caption">Cadeira de jantar</p>
-        </div>
-        <div class="g-item">
-          <img src="images/elevacao-antes-depois.jpg" alt="Assento de elevação infantil antes e depois da higienização">
-          <p class="g-caption">Assento de elevação infantil</p>
-        </div>
-        <div class="g-item">
-          <img src="images/poltrona-amamentação.jpg" alt="Higienização de sofá em Belo Horizonte antes e depois">
-          <p class="g-caption">Poltrona de amamentação</p>
-        </div>
-        <div class="g-item">
-          <img src="images/cadeirinha-antes-depois.jpg" alt="Cadeirinha de bebê para carro antes e depois da higienização">
-          <p class="g-caption">Cadeirinha para carro</p>
-        </div>
-      </div>
+ <section id="galeria">
+  <div class="wrap">
+    <div class="section-head">
+      <span class="eyebrow">Resultados reais de higienização</span>
+      <h2>Antes e depois de trabalhos reais</h2>
     </div>
-  </section>
+
+    <div class="gallery">
+
+      <div class="g-item">
+        <img src="images/sofa-branco-antes-depois.jpg"
+             alt="Higienização completa de sofá de linho bouclé off-white em Belo Horizonte"
+             class="zoom-img">
+        <div class="g-caption">Sofá de linho bouclé off-white</div>
+      </div>
+
+      <div class="g-item">
+        <img src="images/cadeira-antes-depois.jpg"
+             alt="Limpeza profissional de cadeira estofada em Belo Horizonte"
+             class="zoom-img">
+        <div class="g-caption">Cadeira de jantar</div>
+      </div>
+
+      <div class="g-item">
+        <img src="images/elevacao-antes-depois.jpg"
+             alt="Assento de elevação infantil antes e depois da higienização"
+             class="zoom-img">
+        <div class="g-caption">Assento de elevação infantil</div>
+      </div>
+
+      <div class="g-item">
+        <img src="images/poltrona-amamentação.jpg"
+             alt="Higienização de poltrona de amamentação antes e depois"
+             class="zoom-img">
+        <div class="g-caption">Poltrona de amamentação</div>
+      </div>
+
+      <div class="g-item">
+        <img src="images/cadeirinha-antes-depois.jpg"
+             alt="Cadeirinha de bebê para carro antes e depois da higienização"
+             class="zoom-img">
+        <div class="g-caption">Cadeirinha para carro</div>
+      </div>
+      <div class="g-item">
+        <img src="images/sofa-cinza-antes-depois.jpg"
+             alt="Higienização completa de sofá de linho sintético cinza em Belo Horizonte"
+             class="zoom-img">
+        <div class="g-caption">Sofá de linho sintético cinza</div>
+      </div>
+
+    </div>
+  </div>
+</section>
 
   <!-- ============ TESTIMONIALS ============ -->
   <section class="testi" id="depoimentos">
@@ -334,25 +366,39 @@ loading="lazy">
   <div class="wrap foot-grid">
     <div>
       <a href="#top" class="logo">
-         <img
-    src="images/logo.jpg"
-    width="44"
-    height="44"
-    alt="+Clean Higienização de Estofados"
-    class="logo-img">
-  <span class="logo-text">+Clean <span>BH</span></span>
-</a>
-      <p class="cols">Higienização de estofados em Belo Horizonte e região.</p>
-    </div>
-    <div class="cols">
-      <p><strong>WhatsApp:</strong> (31) 983521807</p>
-      <p><strong>Instagram:</strong> 
-         <a href="https://www.instagram.com/maiscleanbh/" target="_blank">
-        @maiscleanbh
-    </a>
+        <img src="images/logo.jpg"
+             width="44"
+             height="44"
+             alt="+Clean Higienização de Estofados"
+             class="logo-img">
+        <span class="logo-text">+Clean <span>BH</span></span>
+      </a>
+
+      <p class="cols">
+        Higienização de estofados em Belo Horizonte e região.
       </p>
+    </div>
+
+    <div class="cols">
+      <p><strong>WhatsApp:</strong> (31) 98352-1807</p>
+      <p>
+  <strong>Instagram:</strong> 
+  <a href="https://www.instagram.com/maiscleanbh/" 
+     target="_blank" 
+     rel="noopener">
+    @maiscleanbh
+  </a>
+</p>
       <p><strong>Atendimento:</strong> seg. a sáb., 8h–18h</p>
     </div>
+  </div>
+
+  <div class="wrap">
+    <p class="copyright">
+      © 2026 +Clean Higienização de Estofados.
+      <br>
+      Desenvolvido por <strong>Leandra Chaves</strong>.
+    </p>
   </div>
 </footer>
 
@@ -380,7 +426,38 @@ loading="lazy">
   });
   
 </script>
+<!-- ============ LIGHTBOX SCRIPT ============ -->
+  <script>
+  const imagens = document.querySelectorAll('.zoom-img');
+  const lightbox = document.getElementById('lightbox');
+  const lightboxImg = document.getElementById('lightbox-img');
+  const fechar = document.querySelector('.lightbox-close');
 
+imagens.forEach(imagem => {
+
+  imagem.addEventListener('click', () => {
+
+    lightboxImg.src = imagem.src;
+    lightbox.classList.add('active');
+
+  });
+
+});
+
+
+fechar.addEventListener('click', () => {
+  lightbox.classList.remove('active');
+});
+
+
+lightbox.addEventListener('click', (evento) => {
+
+  if(evento.target === lightbox){
+    lightbox.classList.remove('active');
+  }
+
+});
+</script>
 
 </body>
 </html>
